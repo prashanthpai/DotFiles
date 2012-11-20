@@ -1,0 +1,10 @@
+"1.0
+
+loadplugins '\.(js|penta)$'
+group user
+map -count -modes=c hn -builtin to<Space>news.ycombinator.com
+map -count -modes=c mail -builtin to<Space>gmail.com
+map -count -modes=c wiki to<Space>wikipedia
+map -count -modes=c tc -builtin tabclose
+
+" vim: set ft=pentadactyl:
