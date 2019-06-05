@@ -165,3 +165,38 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 export T='/home/vik/vikkamath/vik-daily/2016/12/03'
 export RNN='/home/vik/vikkamath/vik-daily/video-ladder/experiments/rnn_ladder'
+
+#           _,     _   _     ,_
+#       .-'` /     \'-'/     \ `'-.
+#      /    |      |   |      |    \
+#     ;      \_  _/     \_  _/      ;
+#    |         ``         ``         |
+#    |          I'M  BATMAN          |
+#     ;    .-.   .-.   .-.   .-.    ;
+#      \  (   '.'   \ /   '.'   )  /
+#       '-.;         V         ;.-'
+
+function batman() {
+	declare -a batman_quotes=(
+	"It's not who I am underneath, but what I do that defines me. - Batman"
+	"Some men just want to watch the world burn. - Alfred"
+	"Everything's impossible until somebody does it. - Batman"
+	"The night is darkest just before the dawn. And I promise you. The dawn is coming. - Harvey Dent"
+	"Why do we fall? So that we can learn to pick ourselves back up. - Batman"
+	"You start pretending to have fun; you might even have a little by accident. - Alfred"
+	"Our greatest glory is not in ever falling, but in rising every time we fall. - Batman"
+	"Whatever doesn't kill you, simply makes you stronger. - Batman"
+	"Endure, Master Wayne. Take it. They'll hate you for it, but that's the point of Batman, he can be the outcast. - Alfred"
+	"Sometimes the truth isn't good enough, sometimes people need more. - Batman"
+	"But as a symbol, as a symbol I can be incorruptible. - Batman"
+	"I'm whatever Gotham needs me to be. - Batman"
+	"Rachel, all- all this, it- it's not me, inside, I am, I am more. - Batman"
+	"You either die a hero or live long enough to see yourself become the villain. - Batman"
+	"If you're good at something, never do it for free. - The Joker"
+	)
+
+	rand=$((RANDOM % ${#batman_quotes[@]}))
+	echo "${batman_quotes[$rand]}"
+}
+
+alias pp='batman'
